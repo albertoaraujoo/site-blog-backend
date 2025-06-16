@@ -3,8 +3,10 @@ const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
 const postRoute = require("./routes/post.route.js");
+const cors = require("cors");
 
 //middleware
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
