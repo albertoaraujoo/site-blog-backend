@@ -55,14 +55,17 @@ npm install
 
 1. Create a `.env` file in the project root:
 ```bash
-touch .env
+# Copy the example file
+cp .env.example .env
 ```
 
-2. Add the following environment variables:
+2. Add your environment variables to the `.env` file:
 ```env
-MONGODB_URI=mongodb://localhost:27017/blog-database
+MONGODB_URI=your_mongodb_connection_string_here
 PORT=3001
 ```
+
+⚠️ **Security Warning**: Never commit your `.env` file to version control. It contains sensitive information like database credentials.
 
 ### MongoDB Configuration
 
